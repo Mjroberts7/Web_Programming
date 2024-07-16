@@ -38,8 +38,8 @@ class Songs {
         return [];
     }
 
-    private function writetoFile($data) {
-        file_put_contents($this->outfile, json_decode($data));
+    private function writeToFile($data) {
+        file_put_contents($this->outfile, json_encode($data));
     }
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -48,7 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $artist = $_POST["artist"];
     
     $songs = new Songs();
-    $songs->addSongToList($songName, $composer, $artist)
+    $songs->addSongToList($songName, $composer, $artist);
 }
 
 ?>
+<button onclick="window.location.href='webClassHTMLFile1.html'">Another Song?</button>
+<button onclick="window.location.href='surveyResults.php'">View result?</button>
