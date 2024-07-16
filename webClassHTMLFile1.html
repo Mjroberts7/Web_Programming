@@ -1,13 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <form method="get" action="dataCollectionFromHTML1.php">
-
+    <meta charset="UTF-8">
+    <title>Favorite Popular Songs</title>
+</head>
+<!--website that allows you to submit your favorite songsa-->
+<body>
+    <h1>Favorite Popular Songs</h1>
+    <form method="post" action="dataCollectionFromHTML1.php">
+        <p>
+            <label for="songName">Favorite Song Name:</label>
+            <input type="text" id="songName" name="songName" required>
+        </p>
+        <p>
+            <label for="composer">Composer of Song:</label>
+            <input type="text" id="composer" name="composer" required>
+        </p>    
+        <p> 
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
     </form>
     <form method="get" action="surveyResults.php">
-
+        <p>
+            <input type="submit" value="View Survey Results">
+        </p>
     </form>
-</head>
-<body>
-    <h1>favorite popular songs</h1>
-    
 </body>
+</html>
