@@ -31,8 +31,8 @@ $songList = $songs->getSongList();
             <li>
                 SongName: <?= htmlspecialchars($song["song"]) ?>
                 <ul>
-                    <li>SongName: <?= htmlspecialchars($song["composer"]) ?></li>
-                    <li>SongName: <?= htmlspecialchars($song["artist"]) ?></li>
+                    <li>Composer: <?= htmlspecialchars($song["composer"]) ?></li>
+                    <li>Artist: <?= htmlspecialchars($song["artist"]) ?></li>
                 </ul>    
             </li>
         <?php endforeach; ?>
